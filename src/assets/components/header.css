@@ -1,0 +1,25 @@
+@import '../styles/variables.css';
+
+header {
+  background-color: var(--primary);
+  height: 3rem;
+  color: var(--white);
+  box-shadow: -1px 6px 23px 0px rgba(0,0,0,0.75);
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.navigation .links {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+.navigation .links:hover {
+  color: var(--secondary);
+}
