@@ -1,0 +1,78 @@
+@import "../styles/variables.css";
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.greeting h1 {
+  text-align: center;
+}
+
+.greeting p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.greeting .greeting-img {
+  margin: 0 auto;
+  max-width: 250px;
+  margin-bottom: -9%;
+}
+
+.greeting .greeting-img img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  filter: drop-shadow(10px 4px 6px var(--black));
+  -webkit-filter: drop-shadow(10px 4px 6px var(--black));
+}
+
+
+.about-me {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 10% 30%;
+}
+
+
+.skills {
+  margin: -5% 4rem 4rem;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px solid #e6ecf8;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.skills .skills-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skills-container .skill-card {
+  border-right: 1px solid #e6ecf8;
+  padding: 2rem;
+}
+.skills-container .skill-card:last-of-type {
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+}
+.skills-container .skill-card ul {
+  list-style: none;
+}
+.skills-container .skill-card .list-title {
+  color: var(--secondary);
+  font-weight: 700;
+  margin-top: 1rem;
+}
