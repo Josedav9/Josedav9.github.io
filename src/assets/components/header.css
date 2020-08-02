@@ -24,3 +24,7 @@ header {
 .navigation .links:hover {
   color: var(--secondary);
 }
+
+svg {
+  fill: var(--secondary);
+}

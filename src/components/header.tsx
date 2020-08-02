@@ -1,7 +1,6 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
 //@ts-ignore
 import Logo from "../images/logo2.inline.svg"
-import Img from "gatsby-image"
 import React from "react"
 import "../assets/components/header.css"
 
