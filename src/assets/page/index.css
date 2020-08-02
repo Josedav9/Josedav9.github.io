@@ -80,6 +80,7 @@
 
 .work-experience {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .company-logos {
@@ -91,5 +92,91 @@
 }
 
 .company-logos img {
-  object-fit: contain!important;
+  object-fit: contain !important;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5rem;
+}
+
+.contact-container {
+  max-width: 80%;
+  border-radius: 20px;
+  color: white;
+  background-color: #141c3a;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contact .contact-container .contact-title{
+  font-family: var(--font-family-title);
+  font-size: 23px;
+  padding: 0 2rem;
+}
+
+.contact .contact-container .contact-info{
+  padding: 0 2rem;
+}
+
+.contact .contact-container .contact-link{
+  font-size: 20px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contact .contact-container .contact-link:hover{
+  transition: all 0.3s ease-out;
+  background-color: var(--blue);
+  color: var(--black);
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+
+
+@media only screen and (max-width: 768px){
+  .greeting .greeting-img {
+    margin-bottom: -11.5%
+  }
+
+  .about-me {
+    padding: 15% 10%;
+  }
+
+  .contact-container {
+    display: block;
+  }
+
+  .contact .contact-container .contact-title {
+    padding-bottom: 1.5rem;
+  }
+  .contact .contact-container .contact-info {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .greeting .greeting-img {
+    margin-bottom: -20.5%
+  }
+
+  .about-me {
+    padding: 20% 10%;
+  }
 }

@@ -16,11 +16,7 @@ import "../assets/page/index.css"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "work-logos" }
-        }
-      ) {
+      allFile(filter: { relativeDirectory: { eq: "work-logos" } }) {
         edges {
           node {
             base
@@ -149,9 +145,24 @@ const IndexPage = () => {
       <section className="work-experience">
         <h2>This are some of the companies I worked for</h2>
         <div className="company-logos">
-          {data.allFile.edges.map(({node}) => (
-            <Img fluid={node.childImageSharp.fluid} alt={node.base.split('.')[0]}/>
+          {data.allFile.edges.map(({ node }) => (
+            <Img
+              key={node.base.split(".")[0]}
+              fluid={node.childImageSharp.fluid}
+              alt={node.base.split(".")[0]}
+            />
           ))}
+        </div>
+      </section>
+
+      <section className="contact">
+        <div className="contact-container">
+          <div className="contact-title">Start a project</div>
+          <div className="contact-info">
+            Do you have business idea and don't know how to start? Let's chat.
+            I'll buy the coffee
+          </div>
+          <div className="contact-link">Let's do it</div>
         </div>
       </section>
     </Layout>

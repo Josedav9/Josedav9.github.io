@@ -1,0 +1,36 @@
+@import "../styles/variables.css";
+
+footer {
+  background-color: var(--secondary);
+  height: 15rem;
+  padding-top: 5rem;
+  color: var(--white);
+}
+
+nav.footer-nav{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.links {
+  padding: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+
+.copy{
+  margin-bottom: 0px;
+  background-color: var(--dark);
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+svg {
+  fill: white;
+}
