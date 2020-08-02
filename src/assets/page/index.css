@@ -159,6 +159,10 @@
     padding: 15% 10%;
   }
 
+  .skills {
+    margin: -5% 5% 5%;
+  }
+
   .contact-container {
     display: block;
   }
@@ -178,5 +182,34 @@
 
   .about-me {
     padding: 20% 10%;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .greeting .greeting-img {
+    margin-bottom: -23%
+  }
+
+  .about-me {
+    padding: 25% 10%;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .greeting .greeting-img {
+    margin-bottom: -23%
+  }
+
+  .about-me {
+    padding: 25% 10%;
+  }
+}
+@media only screen and (max-width: 320px){
+  .greeting .greeting-img {
+    margin-bottom: -27%
+  }
+
+  .about-me {
+    padding: 28% 10%;
   }
 }
