@@ -1,18 +1,21 @@
-@import '../styles/variables.css';
+@import "../styles/variables.css";
 
 header {
   background-color: var(--primary);
   height: 4rem;
   color: var(--white);
-  box-shadow: -1px 6px 23px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 6px 23px 0px rgba(0, 0, 0, 0.75);
 }
-
 
 .navigation {
   display: flex;
   justify-content: space-between;
   padding: 1.3rem;
   margin: 0 3rem;
+}
+
+.navigation-mobile {
+  display: none;
 }
 
 .navigation .links {
@@ -27,4 +30,52 @@ header {
 
 svg {
   fill: var(--secondary);
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    box-shadow: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-logo {
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .burger-button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .burger-button svg {
+    fill: var(--white);
+  }
+
+  .navigation-links {
+    background-color: var(--dark);
+    z-index: 10;
+  }
+
+  .navigation-links .links {
+    display: block;
+    text-decoration: none;
+    height: 3rem;
+    padding: 1rem;
+  }
+
+  .navigation-links .links a {
+    color: white;
+    text-decoration: none;
+  }
 }
